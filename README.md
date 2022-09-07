@@ -32,7 +32,7 @@ timer clock мы узнали  - 96 МГц, counter period для удобств
 HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 ```
 Далее в регистр канала можно записывать число, определяющее скважность в диапазоне от 0 до 20000. Для удобного управления сервоприводом написал следующую функцию:
-```С#
+```Python
 int Set_Servo_Angle(uint8_t Angle) // from 0 to 180 degrees
 {
   uint16_t Pulse_length = 500;
