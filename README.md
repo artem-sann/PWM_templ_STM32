@@ -22,7 +22,7 @@ ____
 ____ 
 
 Теперь определим параметры таймера. Его частота определяется по формуле Frequency = timer clock / prescaler * counter period.
-timer clock мы узнали  - 96 МГц, counter period для удобства можно взять 20000, частота нам нужна 20 Гц, тогда prescaler = timer clock / Frequency * counter period
+timer clock мы узнали  - 96 МГц, counter period для удобства можно взять 20000, частота нам нужна 50 Гц, тогда prescaler = timer clock / Frequency * counter period
 считаем и получаем prescaler = 96. Но в CubeMX нужно записать значение PSC - 1, то есть 95
 
 ![image](https://user-images.githubusercontent.com/73960471/188964024-63ec14a7-aa63-4af5-a3d0-2464536421f5.png)
