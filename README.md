@@ -36,7 +36,7 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 int Set_Servo_Angle(uint8_t Angle) // from 0 to 180 degrees
 {
   uint16_t Pulse_length = 500;
-  if (Angle > 0) {
+  if (Angle > 0  &&  Angle <= 180) {
       Pulse_length += (2700-500)/180 * Angle;
   }
   
